@@ -5,9 +5,15 @@
         "on_exit": "Restart",
         "request_networking": true,
         "request_capabilities": [
-            "http_server:distro:sys"
+            "http_server:distro:sys",
+            "homepage:homepagee:sys",
+            "notify:notify:sys"
         ],
-        "grant_capabilities": [],
+        "grant_capabilities": [
+            "http_server:distro:sys",
+            "homepage:homepagee:sys",
+            "notify:notify:sys"
+        ],
         "public": true
     }
 ]
