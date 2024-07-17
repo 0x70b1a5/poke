@@ -5,7 +5,7 @@ use kinode_process_lib::{await_message, call_init, println, Address, Message, Re
 
 wit_bindgen::generate!({
     path: "target/wit",
-    world: "poke-template-dot-os-v0",
+    world: "poke-tantum-ergo-dot-os-v0",
     generate_unused_types: true,
     additional_derives: [serde::Deserialize, serde::Serialize, process_macros::SerdeJsonInto],
 });
