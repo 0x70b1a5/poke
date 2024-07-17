@@ -12,7 +12,8 @@ interface poke {
     }
 }
 
-world poke-template-dot-os-v0 {
+world poke-tantum-ergo-dot-os-v0 {
     import poke;
+    import notify;
     include process-v0;
 }
