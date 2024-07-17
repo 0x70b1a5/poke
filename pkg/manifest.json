@@ -6,12 +6,12 @@
         "request_networking": true,
         "request_capabilities": [
             "http_server:distro:sys",
-            "homepage:homepagee:sys",
+            "homepage:homepage:sys",
             "notify:notify:sys"
         ],
         "grant_capabilities": [
             "http_server:distro:sys",
-            "homepage:homepagee:sys",
+            "homepage:homepage:sys",
             "notify:notify:sys"
         ],
         "public": true
