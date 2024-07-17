@@ -38,6 +38,7 @@ fn handle_message(
                     .body(notify::Request::Push(notify::Notification {
                         title: Some("You got poked!".to_string()),
                         body: Some(format!("{} poked you", source.node)),
+                        to: vec![]
                     }))
                     .send_and_await_response(5) 
                 else {
