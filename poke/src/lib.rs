@@ -38,7 +38,16 @@ fn handle_message(
                     .body(notify::Request::Push(notify::Notification {
                         title: Some("You got poked!".to_string()),
                         body: Some(format!("{} poked you", source.node)),
-                        to: vec![]
+                        to: vec![],
+                        badge: None,
+                        category_id: None,
+                        channel_id: None, 
+                        ttl: None,
+                        expiration: None,
+                        priority: None,
+                        id: None, 
+                        subtitle: None,
+                        mutable_content: None,
                     }))
                     .send_and_await_response(5) 
                 else {
