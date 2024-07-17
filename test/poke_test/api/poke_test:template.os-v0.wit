@@ -1,0 +1,5 @@
+world poke-test-template-dot-os-v0 {
+    import poke;
+    import tester;
+    include process-v0;
+}

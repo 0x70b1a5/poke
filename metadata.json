@@ -1,0 +1,22 @@
+{
+    "name": "poke",
+    "description": "",
+    "image": "",
+    "properties": {
+        "package_name": "poke",
+        "current_version": "0.1.0",
+        "publisher": "tantum-ergo.os",
+        "mirrors": [
+            "tantum-ergo.os"
+        ],
+        "code_hashes": {
+            "0.1.0": ""
+        },
+        "wit_version": 0,
+        "dependencies": [
+            "notify:tantum-ergo.os"
+        ]
+    },
+    "external_url": "",
+    "animation_url": ""
+}

@@ -1,0 +1,18 @@
+interface poke {
+    variant request {
+        send(send-request),
+    }
+
+    variant response {
+        send,
+    }
+
+    record send-request {
+        target: string,
+    }
+}
+
+world poke-template-dot-os-v0 {
+    import poke;
+    include process-v0;
+}

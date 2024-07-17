@@ -1,0 +1,15 @@
+[
+    {
+        "process_name": "poke_test",
+        "process_wasm_path": "/poke_test.wasm",
+        "on_exit": "Restart",
+        "request_networking": false,
+        "request_capabilities": [
+            "poke:poke:template.os"
+        ],
+        "grant_capabilities": [
+            "poke:poke:template.os"
+        ],
+        "public": true
+    }
+]
