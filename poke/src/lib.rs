@@ -32,7 +32,7 @@ fn handle_message(
                 }
                 let Ok(_) = Request::new()
                     .target(Address {
-                        node: our.node,
+                        node: our.node.clone(),
                         process: "notify:notify:tantum-ergo.os".parse()?,
                     })
                     .body(notify::Request::Push(notify::Notification {
