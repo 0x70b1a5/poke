@@ -36,8 +36,8 @@ fn handle_message(
                         process: "notify:notify:tantum-ergo.os".parse()?,
                     })
                     .body(notify::Request::Push(notify::Notification {
-                        title: "You got poked!",
-                        body: format!("{} poked you", source.node),
+                        title: Some("You got poked!".to_string()),
+                        body: Some(format!("{} poked you", source.node)),
                     }))
                     .send_and_await_response(5) 
                 else {
