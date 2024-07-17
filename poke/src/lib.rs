@@ -1,5 +1,5 @@
 use crate::kinode::process::poke::{Request as PokeRequest, Response as PokeResponse, SendRequest};
-use crate::kinode::process::notify::{Request as NotifyRequest, Response as NotifyResponse};
+use crate::kinode::process::notify;
 use kinode_process_lib::homepage::add_to_homepage;
 use kinode_process_lib::{await_message, call_init, println, Address, Message, Request, Response};
 
@@ -35,10 +35,10 @@ fn handle_message(
                         node: our.node,
                         process: "notify:notify:tantum-ergo.os".parse()?,
                     })
-                    .body(NotifyRequest::Push {
+                    .body(notify::Request::Push(notify::Notification {
                         title: "You got poked!",
                         body: format!("{} poked you", source.node),
-                    })
+                    }))
                     .send_and_await_response(5) 
                 else {
                     return Err(anyhow::anyhow!("{} is offline or doesn't have notify", target));
