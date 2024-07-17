@@ -6,11 +6,13 @@
         "request_networking": true,
         "request_capabilities": [
             "http_server:distro:sys",
+            "http_client:distro:sys",
             "homepage:homepage:sys",
             "notify:notify:tantum-ergo.os"
         ],
         "grant_capabilities": [
             "http_server:distro:sys",
+            "http_client:distro:sys",
             "homepage:homepage:sys",
             "notify:notify:tantum-ergo.os"
         ],
