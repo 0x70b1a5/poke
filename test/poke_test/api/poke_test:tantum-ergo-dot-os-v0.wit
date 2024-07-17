@@ -1,4 +1,4 @@
-world poke-test-template-dot-os-v0 {
+world poke-test-tantum-ergo-dot-os-v0 {
     import poke;
     import tester;
     include process-v0;

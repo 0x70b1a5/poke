@@ -5,14 +5,14 @@
     "properties": {
         "package_name": "poke_test",
         "current_version": "0.1.0",
-        "publisher": "template.os",
+        "publisher": "tantum-ergo.os",
         "mirrors": [],
         "code_hashes": {
             "0.1.0": ""
         },
         "wit_version": 0,
         "dependencies": [
-            "poke:template.os",
+            "poke:tantum-ergo.os",
             "tester:sys"
         ]
     },

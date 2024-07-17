@@ -5,10 +5,10 @@
         "on_exit": "Restart",
         "request_networking": false,
         "request_capabilities": [
-            "poke:poke:template.os"
+            "poke:poke:tantum-ergo.os"
         ],
         "grant_capabilities": [
-            "poke:poke:template.os"
+            "poke:poke:tantum-ergo.os"
         ],
         "public": true
     }

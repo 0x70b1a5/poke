@@ -7,7 +7,7 @@ mod tester_lib;
 
 wit_bindgen::generate!({
     path: "target/wit",
-    world: "poke-test-template-dot-os-v0",
+    world: "poke-test-tantum-ergo-dot-os-v0",
     generate_unused_types: true,
     additional_derives: [PartialEq, serde::Deserialize, serde::Serialize, process_macros::SerdeJsonInto],
 });
@@ -44,11 +44,11 @@ fn handle_message (our: &Address) -> anyhow::Result<()> {
 
     let our_chat_address = Address {
         node: our.node.clone(),
-        process: ProcessId::new(Some("poke"), "poke", "template.os"),
+        process: ProcessId::new(Some("poke"), "poke", "tantum-ergo.os"),
     };
     let their_chat_address = Address {
         node: node_names[1].clone(),
-        process: ProcessId::new(Some("poke"), "poke", "template.os"),
+        process: ProcessId::new(Some("poke"), "poke", "tantum-ergo.os"),
     };
 
     // Send
