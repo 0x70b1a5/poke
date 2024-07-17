@@ -48,6 +48,8 @@ fn handle_message(
                         id: None, 
                         subtitle: None,
                         mutable_content: None,
+                        data: None,
+                        sound: None,
                     }))
                     .send_and_await_response(5) 
                 else {
