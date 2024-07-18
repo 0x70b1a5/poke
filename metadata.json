@@ -1,7 +1,7 @@
 {
     "name": "poke",
-    "description": "",
-    "image": "",
+    "description": "Poke people.",
+    "image": "https://raw.githubusercontent.com/0x70b1a5/poke/master/poke/src/icon.png",
     "properties": {
         "package_name": "poke",
         "current_version": "0.1.0",
@@ -10,7 +10,7 @@
             "tantum-ergo.os"
         ],
         "code_hashes": {
-            "0.1.0": ""
+            "0.1.0": "bb0541567433f441cce36c1e51ef376b3032d2fc0ffb61104dc37b6621b9fbc6"
         },
         "wit_version": 0,
         "dependencies": [
